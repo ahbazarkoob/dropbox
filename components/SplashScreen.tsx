@@ -13,7 +13,7 @@ export default function SplashScreen() {
       {/* Row 2 */}
       <div className="col-span-1 row-span-1 border border-blue-400"></div>
       <div className="col-span-2 row-span-3 flex flex-col items-start justify-between p-5 text-blue-600 border ">
-        <p className="text-5xl font-bold w-[50%]">
+        <p className="text-2xl lg:text-3xl font-bold lg:w-[50%]">
           At Dropbox, our Brand Guidelines help us infuse everything we make
           with identity.
         </p>

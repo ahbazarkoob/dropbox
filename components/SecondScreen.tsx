@@ -17,7 +17,7 @@ export default function SecondScreen() {
       <div className="col-span-1 row-span-1 border border-blue-400"></div>
       <div className="col-span-1 row-span-1 border border-blue-400"></div>
       <div className="col-span-3 row-span-3 flex flex-col items-start justify-between p-5 bg-blue-600 text-white border ">
-        <p className="text-5xl font-bold">
+        <p className="text-base lg:text-3xl font-bold">
           From icons to illustrations, logos to language this collectionis the
           foundation for how Dropbox ooks, feels, and sounds like Dropbox.
         </p>

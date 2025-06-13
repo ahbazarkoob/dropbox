@@ -14,7 +14,7 @@ const MenuScreen = () => {
         role="img"
         aria-label="Framework Animation"
       >
-        <span className="lg:text-4xl font-bold p-6">Framework</span>
+        <span className="text-xl lg:text-4xl font-bold p-6">Framework</span>
         {/* Static SVG icon */}
         <motion.div className="h-full mt-16">
           <motion.svg
@@ -133,7 +133,7 @@ const MenuScreen = () => {
 
       {/* Voice & Tone - Top Middle (Yellow) */}
       <div className="row-span-2 col-span-6 lg:col-start-4 lg:col-span-4 lg:row-span-4 bg-[#fad24b] text-[#684505] hover:text-white hover:bg-black flex flex-col items-start justify-start p-6">
-        <span className="lg:text-4xl font-bold ">Voice & Tone</span>
+        <span className="text-xl lg:text-4xl font-bold ">Voice & Tone</span>
 
         <svg
           className="mt-6"
@@ -162,7 +162,7 @@ const MenuScreen = () => {
 
       {/* Logo - Top Right (Light Blue) */}
       <div className="col-span-7 row-span-2 lg:col-start-8 lg:row-span-5 lg:col-span-3 bg-[#b4c8e1] hover:bg-black flex flex-col text-[#283750] hover:text-white items-start justify-start p-6 ">
-        <span className="lg:text-4xl font-bold">Logo</span>
+        <span className="text-xl lg:text-4xl font-bold">Logo</span>
         <svg
           className="mt-6"
           width="50"
@@ -176,7 +176,7 @@ const MenuScreen = () => {
 
       {/* Typography - Top Far Right (Orange) */}
       <div className="col-span-5 row-span-3 lg:col-span-3 lg:row-span-4 lg:col-start-11 bg-[#fa551e] hover:bg-black text-[#4e0119] hover:text-white flex flex-col items-start justify-start p-6">
-        <span className="lg:text-4xl font-bold ">Typography</span>
+        <span className="text-xl lg:text-4xl font-bold ">Typography</span>
         <div className="flex flex-1 flex-col items-stretch relative">
           <div className="absolute flex items-start w-full max-w-full h-full max-h-[15vh]">
             <div className="h-full w-full">
@@ -231,7 +231,7 @@ const MenuScreen = () => {
         role="img"
         aria-label="Iconography Animation"
       >
-        <span className="lg:text-4xl font-bold ">Iconography</span>
+        <span className="text-xl lg:text-4xl font-bold ">Iconography</span>
         <motion.div className="flex flex-1 items-stretch relative w-full">
           <motion.div className="absolute top-48 left-0 w-full h-full flex items-start justify-start">
             <motion.svg
@@ -281,7 +281,7 @@ const MenuScreen = () => {
         role="img"
         aria-label="Color Animation"
       >
-        <span className="lg:text-4xl font-bold ">Color</span>
+        <span className="text-xl lg:text-4xl font-bold ">Color</span>
         <div className="w-full">
           <motion.svg
             className="z-10"
@@ -391,7 +391,7 @@ const MenuScreen = () => {
         role="img"
         aria-label="Imagery Animation"
       >
-        <span className="lg:text-4xl font-bold ">Imagery</span>
+        <span className="text-xl lg:text-4xl font-bold ">Imagery</span>
         <div className="w-full">
           <motion.svg
             className="mt-10 z-10 mr-10"
@@ -504,7 +504,7 @@ const MenuScreen = () => {
         role="img"
         aria-label="Motion Animation"
       >
-        <span className="lg:text-4xl font-bold ">Motion</span>
+        <span className="text-xl lg:text-4xl font-bold ">Motion</span>
         <div className="mt-10 w-[300px] h-[700px]">
           <motion.svg
             width="300"
