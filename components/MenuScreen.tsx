@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 
 const MenuScreen = () => {
   return (
-    <div className="grid grid-cols-12 grid-rows-9 h-screen w-screen gap-3">
+    <div className="grid grid-cols-12 grid-rows-9 h-screen w-screen gap-3 lg:p-6 p-2">
       {/* Framework - Top Left (Dark Blue) */}
       <motion.div
-        className="col-span-6 row-span-2 lg:col-span-3 lg:row-span-5 bg-[#283750] hover:bg-black text-[#b4c8e1] hover:text-white flex flex-col items-start justify-between"
+        className="col-span-6 row-span-2 lg:col-span-3 lg:row-span-5 bg-[#283750] hover:bg-black text-[#b4c8e1] hover:text-white flex flex-col items-start justify-between border rounded-tl-lg"
         initial="initial"
         whileHover="hover"
         role="img"
@@ -132,7 +132,7 @@ const MenuScreen = () => {
       </motion.div>
 
       {/* Voice & Tone - Top Middle (Yellow) */}
-      <div className="row-span-2 col-span-6 lg:col-start-4 lg:col-span-4 lg:row-span-4 bg-[#fad24b] text-[#684505] hover:text-white hover:bg-black flex flex-col items-start justify-start p-6">
+      <div className="row-span-2 col-span-6 lg:col-start-4 lg:col-span-4 lg:row-span-4 bg-[#fad24b] text-[#684505] hover:text-white hover:bg-black flex flex-col items-start justify-start p-6 border rounded-tr-lg lg:rounded-none">
         <span className="text-xl lg:text-4xl font-bold ">Voice & Tone</span>
 
         <svg
@@ -175,7 +175,7 @@ const MenuScreen = () => {
       </div>
 
       {/* Typography - Top Far Right (Orange) */}
-      <div className="col-span-5 row-span-3 lg:col-span-3 lg:row-span-4 lg:col-start-11 bg-[#fa551e] hover:bg-black text-[#4e0119] hover:text-white flex flex-col items-start justify-start p-6">
+      <div className="col-span-5 row-span-3 lg:col-span-3 lg:row-span-4 lg:col-start-11 bg-[#fa551e] hover:bg-black text-[#4e0119] hover:text-white flex flex-col items-start justify-start p-6 border rounded-none lg:rounded-tr-lg ">
         <span className="text-xl lg:text-4xl font-bold ">Typography</span>
         <div className="flex flex-1 flex-col items-stretch relative">
           <div className="absolute flex items-start w-full max-w-full h-full max-h-[15vh]">
@@ -225,7 +225,7 @@ const MenuScreen = () => {
 
       {/* Iconography - Bottom Left (Green) */}
       <motion.div
-        className="col-span-6 row-span-3 lg:row-start-6 lg:row-span-4 lg:col-span-3  bg-[#b4dc19] hover:bg-black text-[#175641] hover:text-white flex flex-col items-start justify-start p-6"
+        className="col-span-6 row-span-3 lg:row-start-6 lg:row-span-4 lg:col-span-3  bg-[#b4dc19] hover:bg-black text-[#175641] hover:text-white flex flex-col items-start justify-start p-6 rounded-none md:rounded-bl-lg"
         initial="initial"
         whileHover="hover"
         role="img"
@@ -385,7 +385,7 @@ const MenuScreen = () => {
 
       {/* Imagery - Bottom Right (Black) */}
       <motion.div
-        className="col-span-6 row-span-2 lg:col-start-7 lg:row-start-6 lg:col-span-4 lg:row-span-4 bg-[#892055] hover:bg-black hover:text-white text-[#ffafa5] flex flex-col items-start justify-start p-6"
+        className="col-span-6 row-span-2 lg:col-start-7 lg:row-start-6 lg:col-span-4 lg:row-span-4 bg-[#892055] hover:bg-black hover:text-white text-[#ffafa5] flex flex-col items-start justify-start p-6 rounded-bl-lg  lg:rounded-none"
         initial="initial"
         whileHover="hover"
         role="img"
@@ -498,7 +498,7 @@ const MenuScreen = () => {
       {/* Motion - Bottom Far Right (Purple) */}
 
       <motion.div
-        className=" col-span-6 row-span-2 lg:col-start-11 lg:row-start-5 lg:col-span-3 lg:row-span-5 bg-[#c8aff0] hover:bg-black text-[#682760] hover:text-white flex flex-col items-start justify-start p-6"
+        className=" col-span-6 row-span-2 lg:col-start-11 lg:row-start-5 lg:col-span-3 lg:row-span-5 bg-[#c8aff0] hover:bg-black text-[#682760] hover:text-white flex flex-col items-start justify-start p-6 border rounded-br-lg"
         initial="initial"
         whileHover="hover"
         role="img"
