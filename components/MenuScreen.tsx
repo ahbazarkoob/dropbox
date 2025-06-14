@@ -2,34 +2,32 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import DropboxLogo from "./DropboxLogo";
 
 const MenuScreen = () => {
   return (
     <div className="grid grid-cols-12 grid-rows-9 h-screen w-screen gap-3 lg:p-6 p-2">
       {/* Framework - Top Left (Dark Blue) */}
       <motion.div
-        className="col-span-6 row-span-2 lg:col-span-3 lg:row-span-5 bg-[#283750] hover:bg-black text-[#b4c8e1] hover:text-white flex flex-col items-start justify-between border rounded-tl-lg"
+        className="col-span-6 row-span-2 lg:col-span-3 lg:row-span-5 bg-[#283750] hover:bg-black text-[#b4c8e1] hover:text-white flex flex-col items-start justify-between border rounded-tl-lg w-full h-full overflow-hidden"
+                                                                                                                         
         initial="initial"
         whileHover="hover"
         role="img"
         aria-label="Framework Animation"
       >
-        <span className="text-xl lg:text-4xl font-bold p-6">Framework</span>
+        <span className="text-xl lg:text-4xl font-bold p-4 sm:p-6">Framework</span>
         {/* Static SVG icon */}
-        <motion.div className="h-full mt-16">
+        <motion.div className="flex w-full items-center justify-center h-full md:items-start sm:items-start lg:items-end">
           <motion.svg
-            className=" z-10 mr-10"
-            width="400"
-            height="700"
-            viewBox="0 0 400 700"
+            className="z-10 w-[50%] sm:h-[80%] md:w-[55%] md:h-[70%] lg:w-[90%] max-w-[300px] h-auto"
+            viewBox="0 0 400 300"
             fill="none"
             stroke="white"
             strokeWidth="2"
           >
             <motion.rect
-              x="50"
-              y="2"
+              x="0"
+              y="0"
               width="20"
               height="20"
               rx="3"
@@ -51,7 +49,7 @@ const MenuScreen = () => {
             />
             <motion.rect
               x="379"
-              y="145"
+              y="100"
               width="20"
               height="20"
               rx="3"
@@ -72,8 +70,8 @@ const MenuScreen = () => {
               }}
             />
             <motion.rect
-              x="50"
-              y="280"
+              x="0"
+              y="200"
               width="20"
               height="20"
               rx="3"
@@ -94,17 +92,17 @@ const MenuScreen = () => {
               }}
             />
             <motion.path
-              d="M 70 10 L 380 150"
+              d="M 20 10 L 380 105"
               stroke="currentColor"
               strokeWidth="2"
               fill="none"
               variants={{
                 initial: {
-                  d: "M 70 10 L 380 150",
+                  d: "M 20 10 L 380 105",
                   stroke: "#682760",
                 },
                 hover: {
-                  d: "M 90 0 Q 300 50 240 90 Q 190 70 270 70 Q 400 80 390 130 M 390 130 L 370 115 M 390 130 L 410 105",
+                  d: "M 40 10 Q 300 5 240 45 Q 190 25 270 25 Q 400 35 390 85 M 390 85 L 370 70 M 390 85 L 410 60",
                   stroke: "white",
                 },
               }}
@@ -112,17 +110,17 @@ const MenuScreen = () => {
             />
 
             <motion.path
-              d="M 70 290 L 380 160"
+              d="M 20 210 L 380 115"
               stroke="currentColor"
               strokeWidth="2"
               fill="none"
               variants={{
                 initial: {
-                  d: "M 70 290 L 380 160",
+                  d: "M 20 210 L 380 115",
                   stroke: "#682760",
                 },
                 hover: {
-                  d: "M 90 280 L 110 255 M 90 280 L 130 280  M 90 280 L 360 170",
+                  d: "M 40 210 L 60 190 M 40 210 L 60 220  M 40 210 L 360 125",
                   stroke: "white",
                 },
               }}
