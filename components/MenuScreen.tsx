@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { hover, motion } from "framer-motion";
 
 const MenuScreen = () => {
   return (
@@ -9,13 +9,14 @@ const MenuScreen = () => {
       {/* Framework - Top Left (Dark Blue) */}
       <motion.div
         className="col-span-6 row-span-2 lg:col-span-3 lg:row-span-5 bg-[#283750] hover:bg-black text-[#b4c8e1] hover:text-white flex flex-col items-start justify-between border rounded-tl-lg w-full h-full overflow-hidden"
-                                                                                                                         
         initial="initial"
         whileHover="hover"
         role="img"
         aria-label="Framework Animation"
       >
-        <span className="text-xl lg:text-4xl font-bold p-4 sm:p-6">Framework</span>
+        <span className="text-xl lg:text-4xl font-bold p-4 sm:p-6">
+          Framework
+        </span>
         {/* Static SVG icon */}
         <motion.div className="flex w-full items-center justify-center h-full md:items-start sm:items-start lg:items-end">
           <motion.svg
@@ -131,33 +132,112 @@ const MenuScreen = () => {
       </motion.div>
 
       {/* Voice & Tone - Top Middle (Yellow) */}
-      <div className="row-span-2 col-span-7 lg:col-start-4 lg:col-span-4 lg:row-span-4 bg-[#fad24b] text-[#684505] hover:text-white hover:bg-black flex flex-col items-start justify-start p-6 border rounded-tr-lg lg:rounded-none">
-        <span className="text-xl lg:text-4xl font-bold ">Voice & Tone</span>
-
-        <svg
-          className="mt-6"
-          width="204"
-          height="163"
-          viewBox="0 0 204 163"
-          fill="none"
-        >
-          <path
-            stroke="white"
-            strokeWidth={2}
-            d="M8.16 50.9646C2.72 65.2502 0 82.2384 0 101.929C0 116.987 1.36 128.763 4.08 137.257C7.18857 145.751 12.0457 151.929 18.6514 155.79C25.2571 159.264 34 161.002 44.88 161.002C54.9829 161.002 63.1429 159.651 69.36 156.948C75.5771 154.245 80.0457 149.805 82.7657 143.628C85.8743 137.45 87.4286 129.149 87.4286 118.724C87.4286 107.528 86.0686 99.2266 83.3486 93.8213C81.0171 88.0298 77.1314 84.1689 71.6914 82.2384C66.2514 79.9218 59.0629 78.7635 50.1257 78.7635C47.4878 78.7635 44.9198 78.9721 42.4217 79.3891C43.1347 71.3966 44.537 64.4314 46.6286 58.4935C49.7371 50.7716 54.2057 44.594 60.0343 39.9609C65.8629 35.3277 72.8571 32.6251 81.0172 31.8529L75.7714 0C58.6743 2.31657 44.4914 7.91495 33.2229 16.7951C21.9543 25.2893 13.6 36.6791 8.16 50.9646Z"
-          ></path>
-          <path
-            stroke="white"
-            strokeWidth={2}
-            d="M124.731 50.9646C119.291 65.2502 116.571 82.2384 116.571 101.929C116.571 116.987 117.931 128.763 120.651 137.257C123.76 145.751 128.617 151.929 135.223 155.79C141.829 159.264 150.571 161.002 161.451 161.002C171.554 161.002 179.714 159.651 185.931 156.948C192.149 154.245 196.617 149.805 199.337 143.628C202.446 137.45 204 129.149 204 118.724C204 107.528 202.64 99.2266 199.92 93.8213C197.589 88.0298 193.703 84.1689 188.263 82.2384C182.823 79.9218 175.634 78.7635 166.697 78.7635C164.059 78.7635 161.491 78.9721 158.993 79.3891C159.706 71.3966 161.108 64.4314 163.2 58.4935C166.309 50.7716 170.777 44.594 176.606 39.9609C182.434 35.3277 189.429 32.6251 197.589 31.8529L192.343 0C175.246 2.31657 161.063 7.91495 149.794 16.7951C138.526 25.2893 130.171 36.6791 124.731 50.9646Z"
-          ></path>
-          <path
-            stroke="white"
-            strokeWidth={2}
-            d="M8.16 50.9646C2.72 65.2502 0 82.2384 0 101.929C0 116.987 1.36 128.763 4.08 137.257C7.18857 145.751 12.0457 151.929 18.6514 155.79C25.2571 159.264 34 161.002 44.88 161.002C54.9829 161.002 63.1429 159.651 69.36 156.948C75.5771 154.245 80.0457 149.805 82.7657 143.628C85.8743 137.45 87.4286 129.149 87.4286 118.724C87.4286 107.528 86.0686 99.2266 83.3486 93.8213C81.0171 88.0298 77.1314 84.1689 71.6914 82.2384C66.2514 79.9218 59.0629 78.7635 50.1257 78.7635C47.4878 78.7635 44.9198 78.9721 42.4217 79.3891C43.1347 71.3966 44.537 64.4314 46.6286 58.4935C49.7371 50.7716 54.2057 44.594 60.0343 39.9609C65.8629 35.3277 72.8571 32.6251 81.0172 31.8529L75.7714 0C58.6743 2.31657 44.4914 7.91495 33.2229 16.7951C21.9543 25.2893 13.6 36.6791 8.16 50.9646Z"
-          ></path>
-        </svg>
-      </div>
+      <motion.div
+        className="row-span-2 col-span-7 lg:col-start-4 lg:col-span-4 lg:row-span-4 bg-[#fad24b] text-[#684505] hover:text-white hover:bg-black flex flex-col items-start justify-between border rounded-tr-lg lg:rounded-none overflow-hidden w-full h-full"
+        initial="initial"
+        whileHover="hover"
+        role="img"
+        aria-label="Voice and Tone Animation"
+      >
+        <span className="text-base sm:text-xl md:text-2xl lg:text-4xl font-bold p-2 sm:p-6">
+          Voice & Tone
+        </span>
+        <motion.div className="flex w-full h-full items-start p-3">
+          <motion.div className="flex w-full h-full items-start justify-start">
+            <motion.svg
+              className="w-[60%] h-[60%] sm:w-[50%] sm:h-[50%] md:w-[30%] md:h-[40%] lg:h-[40%]"
+              width="204"
+              height="163"
+              viewBox="0 0 210 163"
+              fill="none"
+            >
+              <motion.path
+                fill="currentColor"
+                strokeWidth={4}
+                stroke="currentColor"
+                variants={{
+                  initial: {
+                    fill: "#684505",
+                    stroke: "#684505",
+                    strokeWidth: 4,
+                  },
+                  hover: {
+                    fill: "#000",
+                    stroke: "white",
+                    strokeWidth: 4,
+                  },
+                }}
+                d="M8.16 50.9646C2.72 65.2502 0 82.2384 0 101.929C0 116.987 1.36 128.763 4.08 137.257C7.18857 145.751 12.0457 151.929 18.6514 155.79C25.2571 159.264 34 161.002 44.88 161.002C54.9829 161.002 63.1429 159.651 69.36 156.948C75.5771 154.245 80.0457 149.805 82.7657 143.628C85.8743 137.45 87.4286 129.149 87.4286 118.724C87.4286 107.528 86.0686 99.2266 83.3486 93.8213C81.0171 88.0298 77.1314 84.1689 71.6914 82.2384C66.2514 79.9218 59.0629 78.7635 50.1257 78.7635C47.4878 78.7635 44.9198 78.9721 42.4217 79.3891C43.1347 71.3966 44.537 64.4314 46.6286 58.4935C49.7371 50.7716 54.2057 44.594 60.0343 39.9609C65.8629 35.3277 72.8571 32.6251 81.0172 31.8529L75.7714 0C58.6743 2.31657 44.4914 7.91495 33.2229 16.7951C21.9543 25.2893 13.6 36.6791 8.16 50.9646Z"
+              ></motion.path>
+              <motion.path
+                fill="currentColor"
+                strokeWidth={2}
+                stroke="currentColor"
+                variants={{
+                  initial: {
+                    fill: "#684505",
+                    stroke: "#684505",
+                    strokeWidth: 3,
+                  },
+                  hover: {
+                    fill: "#000",
+                    stroke: "white",
+                    strokeWidth: 3,
+                  },
+                }}
+                d="M124.731 50.9646C119.291 65.2502 116.571 82.2384 116.571 101.929C116.571 116.987 117.931 128.763 120.651 137.257C123.76 145.751 128.617 151.929 135.223 155.79C141.829 159.264 150.571 161.002 161.451 161.002C171.554 161.002 179.714 159.651 185.931 156.948C192.149 154.245 196.617 149.805 199.337 143.628C202.446 137.45 204 129.149 204 118.724C204 107.528 202.64 99.2266 199.92 93.8213C197.589 88.0298 193.703 84.1689 188.263 82.2384C182.823 79.9218 175.634 78.7635 166.697 78.7635C164.059 78.7635 161.491 78.9721 158.993 79.3891C159.706 71.3966 161.108 64.4314 163.2 58.4935C166.309 50.7716 170.777 44.594 176.606 39.9609C182.434 35.3277 189.429 32.6251 197.589 31.8529L192.343 0C175.246 2.31657 161.063 7.91495 149.794 16.7951C138.526 25.2893 130.171 36.6791 124.731 50.9646Z"
+              ></motion.path>
+            </motion.svg>
+          </motion.div>
+          <motion.div className="flex justify-end items-end w-full h-full">
+            <motion.svg
+              className="w-[60%] h-[60%] sm:w-[50%] sm:h-[50%] md:w-[30%] md:h-[40%] lg:h-[40%]"
+              width="204"
+              height="163"
+              viewBox="0 0 204 163"
+              fill="none"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <motion.path
+                fill="currentColor"
+                strokeWidth={2}
+                stroke="currentColor"
+                variants={{
+                  initial: {
+                    fill: "#684505",
+                    stroke: "#684505",
+                    strokeWidth: 3,
+                  },
+                  hover: {
+                    fill: "#000",
+                    stroke: "white",
+                    strokeWidth: 3,
+                  },
+                }}
+                d="M195.84 112.0354C201.28 97.7498 204 80.7616 204 61.071C204 46.013 202.64 34.237 199.92 25.743C196.811 17.249 191.954 11.071 185.349 7.21C178.743 3.736 170 2 159.12 2C149.017 2 140.857 3.351 134.64 6.054C128.423 8.757 123.954 13.197 121.234 19.374C118.126 25.55 116.571 33.851 116.571 44.276C116.571 55.472 117.931 63.7734 120.651 69.1787C122.983 74.9702 126.869 78.8311 132.309 80.7616C137.749 83.0782 144.937 84.2365 153.874 84.2365C156.512 84.2365 159.08 84.0279 161.578 83.6109C160.865 91.6034 159.463 98.5686 157.371 104.5065C154.263 112.2284 149.794 118.406 143.966 123.0391C138.137 127.6723 131.143 130.3749 122.983 131.1471L128.229 163C145.326 160.68343 159.509 155.08505 170.777 146.2049C182.046 137.7107 190.4 126.3209 195.84 112.0354Z"
+              />
+              <motion.path
+                fill="currentColor"
+                strokeWidth={2}
+                stroke="currentColor"
+                variants={{
+                  initial: {
+                    fill: "#684505",
+                    stroke: "#684505",
+                    strokeWidth: 3,
+                  },
+                  hover: {
+                    fill: "#000",
+                    stroke: "white",
+                    strokeWidth: 3,
+                  },
+                }}
+                d="M79.269 112.0354C84.709 97.7498 87.429 80.7616 87.429 61.071C87.429 46.013 86.069 34.237 83.349 25.743C80.24 17.249 75.383 11.071 68.777 7.21C62.171 3.736 53.429 2 42.549 2C32.446 2 24.286 3.351 18.069 6.054C11.851 8.757 7.383 13.197 4.663 19.374C1.554 25.55 0 33.851 0 44.276C0 55.472 1.36 63.7734 4.08 69.1787C6.411 74.9702 10.297 78.8311 15.737 80.7616C21.177 83.0782 28.366 84.2365 37.303 84.2365C39.941 84.2365 42.509 84.0279 45.007 83.6109C44.294 91.6034 42.892 98.5686 40.8 104.5065C37.691 112.2284 33.223 118.406 27.394 123.0391C21.566 127.6723 14.571 130.3749 6.411 131.1471L11.657 163C28.754 160.68343 42.937 155.08505 54.206 146.2049C65.474 137.7107 73.829 126.3209 79.269 112.0354Z"
+              />
+            </motion.svg>
+          </motion.div>
+        </motion.div>
+      </motion.div>
 
       {/* Logo - Top Right (Light Blue) */}
       <div className="col-span-7 row-span-2 lg:col-start-8 lg:row-span-5 lg:col-span-3 bg-[#b4c8e1] hover:bg-black flex flex-col text-[#283750] hover:text-white items-start justify-start p-6 ">
