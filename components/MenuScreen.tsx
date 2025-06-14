@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import DropboxLogo from "./DropboxLogo";
 
 const MenuScreen = () => {
   return (
@@ -132,7 +133,7 @@ const MenuScreen = () => {
       </motion.div>
 
       {/* Voice & Tone - Top Middle (Yellow) */}
-      <div className="row-span-2 col-span-6 lg:col-start-4 lg:col-span-4 lg:row-span-4 bg-[#fad24b] text-[#684505] hover:text-white hover:bg-black flex flex-col items-start justify-start p-6 border rounded-tr-lg lg:rounded-none">
+      <div className="row-span-2 col-span-7 lg:col-start-4 lg:col-span-4 lg:row-span-4 bg-[#fad24b] text-[#684505] hover:text-white hover:bg-black flex flex-col items-start justify-start p-6 border rounded-tr-lg lg:rounded-none">
         <span className="text-xl lg:text-4xl font-bold ">Voice & Tone</span>
 
         <svg
@@ -175,7 +176,7 @@ const MenuScreen = () => {
       </div>
 
       {/* Typography - Top Far Right (Orange) */}
-      <div className="col-span-5 row-span-3 lg:col-span-3 lg:row-span-4 lg:col-start-11 bg-[#fa551e] hover:bg-black text-[#4e0119] hover:text-white flex flex-col items-start justify-start p-6 border rounded-none lg:rounded-tr-lg ">
+      <div className="col-span-6 row-span-3 lg:col-span-3 lg:row-span-4 lg:col-start-11 bg-[#fa551e] hover:bg-black text-[#4e0119] hover:text-white flex flex-col items-start justify-start p-6 border rounded-none lg:rounded-tr-lg ">
         <span className="text-xl lg:text-4xl font-bold ">Typography</span>
         <div className="flex flex-1 flex-col items-stretch relative">
           <div className="absolute flex items-start w-full max-w-full h-full max-h-[15vh]">
@@ -201,25 +202,15 @@ const MenuScreen = () => {
       </div>
 
       {/* Dropbox Logo Square - Center (Blue) */}
-      <div className="row-start-5 col-start-7 lg:col-start-7 lg:row-start-5 bg-[#0061fe] flex items-center justify-center">
-        {/* <svg width="50" height="50" viewBox="0 0 100 100" fill="white">
-              <path d="M20 20 L50 40 L20 60 L50 40 Z" />
-              <path d="M50 40 L80 20 L50 40 L80 60 Z" />
-              <path d="M20 60 L50 80 L80 60 L50 40 Z" />
-            </svg> */}
-
+      <div className="row-start-5 col-start-7 lg:col-start-7 lg:row-start-5 bg-[#0061fe] flex items-center">
         <svg
           viewBox="120 120 1462 1462"
-          fill="white"
+          fill="currentColor"
+          className={`w-52 h-52 text-white`}
           role="img"
           aria-label="Dropbox Logo"
         >
-          <path d="M44.3743 116.181L57.6864 116.181V102.115C60.501 101.018 62.8802 99.0769 64.4768 96.5757C66.0734 94.0745 66.71 91.1539 66.71 88.2117C66.71 85.9998 66.4417 84.1626 65.7204 82.2617C64.9991 80.3608 63.8606 78.6345 62.3836 77.2022C60.9067 75.77 59.1265 74.6659 57.1662 73.9665C55.2059 73.267 53.1143 72.9998 51.0303 72.9998C48.942 72.9998 46.8548 73.267 44.8945 73.9665C42.9342 74.6659 41.154 75.77 39.6771 77.2022C38.2001 78.6345 37.0616 80.3608 36.3403 82.2617C35.619 84.1626 35.35 85.9998 35.35 88.2117C35.35 91.1539 35.9873 94.0745 37.5839 96.5757C39.1804 99.0769 41.5597 101.018 44.3743 102.115V116.181Z" />
-
-          <path
-            d="M663.477 555.977L850.079 673.172L663.477 790.366L476.906 673.172L663.477 555.977ZM663.477 791.542L850.079 908.739L663.477 1025.93L476.906 908.739L663.477 791.542ZM851.951 908.739L1038.52 791.542L1225.09 908.739L1038.52 1025.93L851.951 908.739ZM1225.09 673.172L1038.52 790.366L851.951 673.172L1038.52 555.977L1225.09 673.172ZM1037.59 1065.78L851.015 1182.97L664.413 1065.78L851.015 948.585L1037.59 1065.78Z"
-            // style="stroke-dasharray: 439.8, 1000; stroke-dashoffset: 439.8;"
-          ></path>
+          <path d="M663.477 555.977L850.079 673.172L663.477 790.366L476.906 673.172L663.477 555.977ZM663.477 791.542L850.079 908.739L663.477 1025.93L476.906 908.739L663.477 791.542ZM851.951 908.739L1038.52 791.542L1225.09 908.739L1038.52 1025.93L851.951 908.739ZM1225.09 673.172L1038.52 790.366L851.951 673.172L1038.52 555.977L1225.09 673.172ZM1037.59 1065.78L851.015 1182.97L664.413 1065.78L851.015 948.585L1037.59 1065.78Z" />
         </svg>
       </div>
 
@@ -498,7 +489,7 @@ const MenuScreen = () => {
       {/* Motion - Bottom Far Right (Purple) */}
 
       <motion.div
-        className=" col-span-6 row-span-2 lg:col-start-11 lg:row-start-5 lg:col-span-3 lg:row-span-5 bg-[#c8aff0] hover:bg-black text-[#682760] hover:text-white flex flex-col items-start justify-start p-6 border rounded-br-lg"
+        className=" col-span-7 row-span-2 lg:col-start-11 lg:row-start-5 lg:col-span-3 lg:row-span-5 bg-[#c8aff0] hover:bg-black text-[#682760] hover:text-white flex flex-col items-start justify-start p-6 border rounded-br-lg"
         initial="initial"
         whileHover="hover"
         role="img"
