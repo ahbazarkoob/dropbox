@@ -478,25 +478,24 @@ const MenuScreen = () => {
 
       {/* Color - Bottom Center (Orange) */}
       <motion.div
-        className="col-span-7 row-span-2 col-start-7 lg:col-span-3 lg:row-span-5 lg:col-start-4  bg-[#f9a34b] hover:bg-black text-[#6d2e09] hover:text-white flex flex-col items-start justify-start p-6"
+        className="col-span-7 row-span-2 col-start-7 lg:col-span-3 lg:row-span-5 lg:col-start-4  bg-[#f9a34b] hover:bg-black text-[#6d2e09] hover:text-white flex flex-col items-start justify-between overflow-hidden w-full h-full"
         initial="initial"
         whileHover="hover"
         role="img"
         aria-label="Color Animation"
       >
-        <span className="text-xl lg:text-4xl font-bold ">Color</span>
-        <div className="w-full">
+        <span className="text-xl lg:text-4xl font-bold p-3">Color</span>
+        <motion.div className="flex w-full h-full justify-end items-end p-1">
           <motion.svg
-            className="z-10"
-            width="600"
-            height="700"
-            viewBox="0 0 600 700"
+            className="w-[90%] sm:w-[80%] md:w-[50%] lg:w-full lg:pt-40 h-full"
+            viewBox="0 0 600 240"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid meet"
           >
             <motion.rect
-              x="130"
-              y="210"
+              x="360"
+              y="0"
               width="120"
               height="120"
               fill="currentColor"
@@ -515,21 +514,21 @@ const MenuScreen = () => {
               }}
             />
             <motion.circle
-              cx="190"
-              cy="270"
+              cx="420"
+              cy="60"
               r="30"
               fill="#6d2e09"
               stroke="#6d2e09"
               strokeWidth="2"
               variants={{
                 initial: {
-                  cx: 190,
-                  cy: 270,
+                  cx: 420,
+                  cy: 60,
                   stroke: "#6d2e09",
                   fill: "#6d2e09",
                 },
                 hover: {
-                  cx: 310,
+                  cx: 540,
                   stroke: "white",
                   fill: "#000",
                 },
@@ -537,8 +536,9 @@ const MenuScreen = () => {
             />
 
             <motion.rect
-              x="250"
-              y="330"
+              x="480"
+              y="120"
+              // y="310"
               width="120"
               height="120"
               fill="currentColor"
@@ -562,28 +562,28 @@ const MenuScreen = () => {
               }}
             />
             <motion.circle
-              cx="310"
-              cy="390"
+              cx="540"
+              cy="180"
               r="30"
               fill="#be4b0a"
               stroke="#be4b0a"
               strokeWidth="2"
               variants={{
                 initial: {
-                  cx: 310,
-                  cy: 390,
+                  cx: 540,
+                  cy: 180,
                   stroke: "#be4b0a",
                   fill: "#be4b0a",
                 },
                 hover: {
-                  cx: 190,
+                  cx: 420,
                   stroke: "white",
                   fill: "#000",
                 },
               }}
             />
           </motion.svg>
-        </div>
+        </motion.div>
       </motion.div>
 
       {/* Imagery - Bottom Right (Black) */}
