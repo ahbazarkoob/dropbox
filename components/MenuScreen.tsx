@@ -25,7 +25,6 @@ const MenuScreen = () => {
             fill="none"
             stroke="white"
             strokeWidth="2"
-            
           >
             <motion.rect
               x="0"
@@ -255,18 +254,43 @@ const MenuScreen = () => {
       </motion.div>
 
       {/* Logo - Top Right (Light Blue) */}
-      <div className="col-span-7 row-span-2 lg:col-start-8 lg:row-span-5 lg:col-span-3 bg-[#b4c8e1] hover:bg-black flex flex-col text-[#283750] hover:text-white items-start justify-start p-6 ">
+      <motion.div
+        className="col-span-7 row-span-2 lg:col-start-8 lg:row-span-5 lg:col-span-3 bg-[#3DD3EE] hover:bg-black flex flex-col text-[#283750] hover:text-white items-start justify-start p-6 w-full h-full overflow-hidden"
+        initial="initial"
+        whileHover="hover"
+        role="img"
+        aria-label="Logo Animation"
+      >
         <span className="text-xl lg:text-4xl font-bold">Logo</span>
-        <svg
-          className="mt-6"
-          width="50"
-          height="50"
-          viewBox="0 0 100 100"
-          fill="#283750"
-        >
-          <rect width={60} height={60}></rect>
-        </svg>
-      </div>
+        <motion.div className="flex w-full h-full justify-end items-end">
+          <motion.svg
+            viewBox="120 120 1462 1462"
+            fill="currentColor"
+            className="w-32 h-32"
+            role="img"
+            aria-label="Dropbox Logo"
+          >
+            <motion.path
+              fill="currentColor"
+              strokeWidth={4}
+              stroke="currentColor"
+              variants={{
+                initial: {
+                  fill: "#055463",
+                  stroke: "#055463",
+                  strokeWidth: 4,
+                },
+                hover: {
+                  fill: "#000",
+                  stroke: "white",
+                  strokeWidth: 4,
+                },
+              }}
+              d="M663.477 555.977L850.079 673.172L663.477 790.366L476.906 673.172L663.477 555.977ZM663.477 791.542L850.079 908.739L663.477 1025.93L476.906 908.739L663.477 791.542ZM851.951 908.739L1038.52 791.542L1225.09 908.739L1038.52 1025.93L851.951 908.739ZM1225.09 673.172L1038.52 790.366L851.951 673.172L1038.52 555.977L1225.09 673.172ZM1037.59 1065.78L851.015 1182.97L664.413 1065.78L851.015 948.585L1037.59 1065.78Z"
+            />
+          </motion.svg>
+        </motion.div>
+      </motion.div>
 
       {/* Typography - Top Far Right (Orange) */}
       <div className="col-span-6 row-span-3 lg:col-span-3 lg:row-span-4 lg:col-start-11 bg-[#fa551e] hover:bg-black text-[#4e0119] hover:text-white flex flex-col items-start justify-start p-6 border rounded-none lg:rounded-tr-lg ">
