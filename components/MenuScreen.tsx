@@ -701,14 +701,14 @@ const MenuScreen = () => {
       {/* Motion - Bottom Far Right (Purple) */}
 
       <motion.div
-        className=" col-span-7 row-span-2 lg:col-start-11 lg:row-start-5 lg:col-span-3 lg:row-span-5 bg-[#c8aff0] hover:bg-black text-[#682760] hover:text-white flex flex-col items-start justify-start p-6 border rounded-br-lg"
+        className=" col-span-7 row-span-2 lg:col-start-11 lg:row-start-5 lg:col-span-3 lg:row-span-5 bg-[#c8aff0] hover:bg-black text-[#682760] hover:text-white flex flex-col items-start justify-start p-3 border rounded-br-lg overflow-hidden w-full h-full"
         initial="initial"
         whileHover="hover"
         role="img"
         aria-label="Motion Animation"
       >
         <span className="text-xl lg:text-4xl font-bold ">Motion</span>
-        <div className="mt-10 w-[300px] h-[700px]">
+        <div className="w-full h-full">
           <motion.svg
             width="300"
             height="700"
