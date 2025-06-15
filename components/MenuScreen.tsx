@@ -255,18 +255,18 @@ const MenuScreen = () => {
 
       {/* Logo - Top Right (Light Blue) */}
       <motion.div
-        className="col-span-7 row-span-2 lg:col-start-8 lg:row-span-5 lg:col-span-3 bg-[#3DD3EE] hover:bg-black flex flex-col text-[#283750] hover:text-white items-start justify-start p-6 w-full h-full overflow-hidden"
+        className="col-span-7 row-span-2 lg:col-start-8 lg:row-span-5 lg:col-span-3 bg-[#3DD3EE] hover:bg-black flex flex-col text-[#283750] hover:text-white items-start justify-start w-full h-full overflow-hidden"
         initial="initial"
         whileHover="hover"
         role="img"
         aria-label="Logo Animation"
       >
-        <span className="text-xl lg:text-4xl font-bold">Logo</span>
+        <span className="text-xl lg:text-4xl font-bold p-6">Logo</span>
         <motion.div className="flex w-full h-full justify-end items-end">
           <motion.svg
             viewBox="120 120 1462 1462"
             fill="currentColor"
-            className="w-32 h-32"
+            className="w-28 lg:w-48 h-auto"
             role="img"
             aria-label="Dropbox Logo"
           >
@@ -279,14 +279,116 @@ const MenuScreen = () => {
                   fill: "#055463",
                   stroke: "#055463",
                   strokeWidth: 4,
+                  d: "M663.477 555.977L850.079 673.172L663.477 790.366L476.906 673.172L663.477 555.977ZM663.477 791.542L850.079 908.739L663.477 1025.93L476.906 908.739L663.477 791.542ZM851.951 908.739L1038.52 791.542L1225.09 908.739L1038.52 1025.93L851.951 908.739ZM1225.09 673.172L1038.52 790.366L851.951 673.172L1038.52 555.977L1225.09 673.172ZM1037.59 1065.78L851.015 1182.97L664.413 1065.78L851.015 948.585L1037.59 1065.78Z",
                 },
                 hover: {
                   fill: "#000",
                   stroke: "white",
                   strokeWidth: 4,
+                  d: "M1037.59 1065.78L851.015 1182.97L664.413 1065.78L851.015 948.585L1037.59 1065.78Z", // Stack into fifth path
+                  transition: { duration: 0.2, ease: "easeInOut", delay: 0.1 },
                 },
               }}
-              d="M663.477 555.977L850.079 673.172L663.477 790.366L476.906 673.172L663.477 555.977ZM663.477 791.542L850.079 908.739L663.477 1025.93L476.906 908.739L663.477 791.542ZM851.951 908.739L1038.52 791.542L1225.09 908.739L1038.52 1025.93L851.951 908.739ZM1225.09 673.172L1038.52 790.366L851.951 673.172L1038.52 555.977L1225.09 673.172ZM1037.59 1065.78L851.015 1182.97L664.413 1065.78L851.015 948.585L1037.59 1065.78Z"
+            />
+            <motion.path
+              fill="currentColor"
+              strokeWidth={4}
+              stroke="currentColor"
+              variants={{
+                initial: {
+                  fill: "#055463",
+                  stroke: "#055463",
+                  strokeWidth: 4,
+                  d: "M1037.59 1065.78L851.015 1182.97L664.413 1065.78L851.015 948.585L1037.59 1065.78Z", // Stack into fifth path
+                },
+                hover: {
+                  fill: "#000",
+                  stroke: "white",
+                  strokeWidth: 4,
+                  d: "M663.477 555.977L850.079 673.172L663.477 790.366L476.906 673.172L663.477 555.977Z", // Original position
+                  transition: { duration: 0.2, ease: "easeInOut", delay: 0.1 },
+                },
+              }}
+            />
+            <motion.path
+              fill="currentColor"
+              strokeWidth={4}
+              stroke="currentColor"
+              variants={{
+                initial: {
+                  fill: "#055463",
+                  stroke: "#055463",
+                  strokeWidth: 4,
+                  d: "M1037.59 1065.78L851.015 1182.97L664.413 1065.78L851.015 948.585L1037.59 1065.78Z", // Stack into fifth path
+                },
+                hover: {
+                  fill: "#000",
+                  stroke: "white",
+                  strokeWidth: 4,
+                  d: "M663.477 791.542L850.079 908.739L663.477 1025.93L476.906 908.739L663.477 791.542Z", // Original position
+                  transition: { duration: 0.2, ease: "easeInOut", delay: 0.2 },
+                },
+              }}
+            />
+            <motion.path
+              fill="currentColor"
+              strokeWidth={4}
+              stroke="currentColor"
+              variants={{
+                initial: {
+                  fill: "#055463",
+                  stroke: "#055463",
+                  strokeWidth: 4,
+                  d: "M1037.59 1065.78L851.015 1182.97L664.413 1065.78L851.015 948.585L1037.59 1065.78Z", // Stack into fifth path
+                },
+                hover: {
+                  fill: "#000",
+                  stroke: "white",
+                  strokeWidth: 4,
+                  d: "M851.951 908.739L1038.52 791.542L1225.09 908.739L1038.52 1025.93L851.951 908.739Z", // Original position
+                  transition: { duration: 0.2, ease: "easeInOut", delay: 0.3 },
+                },
+              }}
+            />
+            <motion.path
+              fill="currentColor"
+              strokeWidth={4}
+              stroke="currentColor"
+              variants={{
+                initial: {
+                  fill: "#055463",
+                  stroke: "#055463",
+                  strokeWidth: 4,
+                  d: "M1037.59 1065.78L851.015 1182.97L664.413 1065.78L851.015 948.585L1037.59 1065.78Z", // Stack into fifth path
+                },
+                hover: {
+                  fill: "#000",
+                  stroke: "white",
+                  strokeWidth: 4,
+                  d: "M1225.09 673.172L1038.52 790.366L851.951 673.172L1038.52 555.977L1225.09 673.172Z", // Original position
+                  transition: { duration: 0.2, ease: "easeInOut", delay: 0.4 },
+                },
+              }}
+            />
+            <motion.path
+              fill="currentColor"
+              strokeWidth={4}
+              stroke="currentColor"
+              variants={{
+                initial: {
+                  fill: "#055463",
+                  stroke: "#055463",
+                  strokeWidth: 4,
+                  d: "M1037.59 1065.78L851.015 1182.97L664.413 1065.78L851.015 948.585L1037.59 1065.78Z", // Bottom rhombus (unchanged)
+                },
+                hover: {
+                  fill: "#000",
+                  stroke: "white",
+                  strokeWidth: 4,
+                  d: "M1037.59 1065.78L851.015 1182.97L664.413 1065.78L851.015 948.585L1037.59 1065.78Z", // Bottom rhombus (unchanged)
+                  transition: { duration: 0.2, ease: "easeInOut", delay: 0 },
+                },
+              }}
             />
           </motion.svg>
         </motion.div>
