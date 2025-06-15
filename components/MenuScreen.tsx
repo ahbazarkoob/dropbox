@@ -395,30 +395,53 @@ const MenuScreen = () => {
       </motion.div>
 
       {/* Typography - Top Far Right (Orange) */}
-      <div className="col-span-6 row-span-3 lg:col-span-3 lg:row-span-4 lg:col-start-11 bg-[#fa551e] hover:bg-black text-[#4e0119] hover:text-white flex flex-col items-start justify-start p-6 border rounded-none lg:rounded-tr-lg ">
-        <span className="text-xl lg:text-4xl font-bold ">Typography</span>
-        <div className="flex flex-1 flex-col items-stretch relative">
-          <div className="absolute flex items-start w-full max-w-full h-full max-h-[15vh]">
-            <div className="h-full w-full">
-              <svg
-                className="h-full w-full"
-                width="600"
-                height="400"
-                viewBox="0 0 600 400"
-                fill="white"
-                stroke="#175641"
-                strokeWidth="4"
-              >
-                <path
-                  d="M150 350 L300 50 L450 350 M200 250 H400"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                ></path>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
+      <motion.div
+        className="col-span-6 row-span-3 lg:col-span-3 lg:row-span-4 lg:col-start-11 bg-[#fa551e] hover:bg-black text-[#4e0119] hover:text-white flex flex-col border rounded-none lg:rounded-tr-lg h-full w-full"
+        initial="initial"
+        whileHover="hover"
+        role="img"
+        aria-label="Typography Animation"
+      >
+        <span className="text-xl lg:text-4xl font-bold p-3">Typography</span>
+        <motion.div className="flex flex-row justify-end items-end h-full w-full">
+          <motion.svg
+            width="200"
+            height="200"
+            viewBox="0 0 200 200"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="white"
+            strokeWidth="2"
+          >
+            <motion.text
+              x="90"
+              y="190"
+              fontFamily="Arial"
+              fontSize="140"
+              fontWeight="bold"
+              textAnchor="middle"
+              fill="currentColor"
+              strokeWidth={2}
+              stroke="currentColor"
+              variants={{
+                initial: {
+                  fill: "#4e0119",
+                  stroke: "#4e0119",
+                  fontStyle: "normal",
+                },
+                hover: {
+                  fill: "#000",
+                  stroke: "white",
+                  strokeWidth: 3,
+                  fontStyle: "italic",
+                },
+              }}
+            >
+              Aa
+            </motion.text>
+          </motion.svg>
+        </motion.div>
+      </motion.div>
 
       {/* Dropbox Logo Square - Center (Blue) */}
       <div className="row-start-5 col-start-7 lg:col-start-7 lg:row-start-5 bg-[#0061fe] flex items-center">
