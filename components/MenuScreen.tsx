@@ -588,19 +588,19 @@ const MenuScreen = () => {
 
       {/* Imagery - Bottom Right (Black) */}
       <motion.div
-        className="col-span-6 row-span-2 lg:col-start-7 lg:row-start-6 lg:col-span-4 lg:row-span-4 bg-[#892055] hover:bg-black hover:text-white text-[#ffafa5] flex flex-col items-start justify-start p-6 rounded-bl-lg  lg:rounded-none"
+        className=" col-span-6 row-span-2 lg:col-start-7 lg:row-start-6 lg:col-span-4 lg:row-span-4 bg-[#892055] hover:bg-black hover:text-white text-[#ffafa5] flex flex-col items-start justify-start p-6 rounded-bl-lg  lg:rounded-none overflow-hidden w-full h-full"
         initial="initial"
         whileHover="hover"
         role="img"
         aria-label="Imagery Animation"
       >
         <span className="text-xl lg:text-4xl font-bold ">Imagery</span>
-        <div className="w-full">
+        <motion.div className="flex flex-1 w-full h-full items-end justify-end">
           <motion.svg
-            className="mt-10 z-10 mr-10"
-            width="600"
-            height="700"
-            viewBox="0 0 600 700"
+            className="w-32 sm:w-40 md:w-48 lg:w-full h-full z-10"
+            width="550"
+            height="350"
+            viewBox="0 0 550 350"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -695,7 +695,7 @@ const MenuScreen = () => {
               transition={{ duration: 0.5, ease: "easeInOut" }}
             />
           </motion.svg>
-        </div>
+        </motion.div>
       </motion.div>
 
       {/* Motion - Bottom Far Right (Purple) */}
