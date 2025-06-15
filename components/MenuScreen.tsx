@@ -25,6 +25,7 @@ const MenuScreen = () => {
             fill="none"
             stroke="white"
             strokeWidth="2"
+            
           >
             <motion.rect
               x="0"
@@ -150,6 +151,13 @@ const MenuScreen = () => {
               height="163"
               viewBox="0 0 210 163"
               fill="none"
+              variants={{
+                initial: { x: 0 },
+                hover: {
+                  x: 50,
+                  transition: { duration: 0.8, ease: "easeInOut" },
+                },
+              }}
             >
               <motion.path
                 fill="currentColor"
@@ -197,6 +205,13 @@ const MenuScreen = () => {
               viewBox="0 0 204 163"
               fill="none"
               preserveAspectRatio="xMidYMid meet"
+              variants={{
+                initial: { x: 0 },
+                hover: {
+                  x: -50,
+                  transition: { duration: 0.8, ease: "easeInOut" },
+                },
+              }}
             >
               <motion.path
                 fill="currentColor"
